@@ -1,0 +1,46 @@
+﻿<ion-view title="Detalhes">
+
+    <ion-nav-buttons side="right">
+    </ion-nav-buttons>
+
+    <ion-content>
+        <div class="padding-top padding-horizontal">
+            <img ng-src="{{podcastItem.ImageUrl}}" class="podcast-image" />
+            <h5>{{podcastItem.Title}}</h5>
+            <p class="dark">{{podcastItem.HowLongAgo}} - <i class="icon ion-ios-stopwatch-outline"></i> {{podcastItem.Duration}}</p>
+            <div>
+                <button class="button button-block button-positive" ng-click="play()">
+                    <i class="icon ion-play" ng-show="!canPause()"></i>
+                    <i class="icon ion-pause" ng-show="canPause()"></i>
+                </button>
+            </div>
+
+            <div>
+                <button class="button button-block button-positive button-outline"
+                        ng-disabled="gettingDetail || podcastDetail()"
+                        ng-click="showDetail()">
+                    Mais detalhes
+                </button>
+            </div>
+        </div>
+
+        <div class="card" ng-if="detailError">
+            <div class="item item-text-wrap assertive padding">
+                Erro de requisição. Por favor, tente novamente.
+            </div>
+        </div>
+
+        <div ng-if="podcastDetail()|| gettingDetail">
+            <div class="item-text-wrap padding" ng-if="!podcastDetail()">
+                <div class="text-center">
+                    <strong>
+                        <i class="icon ion-loading-c"></i>
+                    </strong>
+                </div>
+            </div>
+
+            <div class="item-text-wrap padding" ng-bind-html="contentDetail()" ng-if="podcastDetail()">
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

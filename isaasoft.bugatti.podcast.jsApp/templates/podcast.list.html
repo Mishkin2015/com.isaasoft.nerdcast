@@ -1,0 +1,42 @@
+﻿<ion-view title="Nerdcast">
+
+    <ion-nav-buttons side="right">
+        <button class="button button-icon" ng-if="!search.showSubHeader" ng-click="search.toggleShowSubHeader()">
+            <i class="icon ion-android-search"></i>
+        </button>
+
+        <button class="button button-icon" ng-click="openMenuRightPopover( $event )">
+            <i class="icon ion-android-more-vertical"></i>
+        </button>
+    </ion-nav-buttons>
+
+    <ion-content>
+        <ion-refresher pulling-icon="ion-android-download"
+                       refreshing-icon="ion-loading-c"
+                       disable-pulling-rotation="true"
+                       on-refresh="doRefresh()"></ion-refresher>
+
+        <ion-list>
+            <ion-item class="item-text-wrap assertive" ng-if="doLoadError">
+                Erro de requisição. Por favor, tente novamente.
+            </ion-item>
+
+            <ion-item class="padding" ng-repeat="item in podcast" ng-click="goDetail( $index )">
+                <img ng-src="{{item.ImageUrl}}" class="podcast-image" />
+                <h2>{{item.Title}}</h2>
+                <p>{{item.HowLongAgo}} - <i class="icon ion-ios-stopwatch-outline"></i> {{item.Duration}}</p>
+            </ion-item>
+
+            <ion-item class="item-text-wrap assertive" ng-if="doLoadError && podcast.length > 0">
+                Erro na requisição. Por favor, tente novamente.
+            </ion-item>
+
+            <ion-infinite-scroll ng-if="canDoLoad()"
+                                 icon="ion-loading-c"
+                                 distance="15%"
+                                 on-infinite="doLoad()" />
+        </ion-list>
+
+    </ion-content>
+
+</ion-view>
