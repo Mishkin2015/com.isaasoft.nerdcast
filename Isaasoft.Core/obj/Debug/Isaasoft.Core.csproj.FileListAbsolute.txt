@@ -1,0 +1,13 @@
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\bin\Debug\Isaasoft.Core.dll.config
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\bin\Debug\Isaasoft.Core.dll
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\bin\Debug\Isaasoft.Core.pdb
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\bin\Debug\AWSSDK.dll
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\bin\Debug\EntityFramework.dll
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\bin\Debug\EntityFramework.SqlServer.dll
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\bin\Debug\System.Linq.Dynamic.dll
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\bin\Debug\AWSSDK.pdb
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\bin\Debug\EntityFramework.xml
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\bin\Debug\EntityFramework.SqlServer.xml
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\obj\Debug\Isaasoft.Core.csprojResolveAssemblyReference.cache
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\obj\Debug\Isaasoft.Core.dll
+C:\ProgramData\TFS\isaasoft\Isaasoft.Bugatti.Vanquish\Source\1.0\Isaasoft.Core\obj\Debug\Isaasoft.Core.pdb
